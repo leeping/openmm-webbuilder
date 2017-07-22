@@ -25,6 +25,7 @@ var protein_xml = function(protein_ff) {
         'AMBER99sb-nmr': 'amber99sbnmr.xml',
         AMBER03: 'amber03.xml',
         AMBER10: 'amber10.xml',
+        'AMBER-FB15': 'amberfb15.xml'
     };
     return xmls[protein_ff];
 }
@@ -33,6 +34,7 @@ var water_xml = function(protein_ff, water_ff) {
     var explicit_xmls = {
         'SPC/E': 'spce.xml',
         TIP3P: 'tip3p.xml',
+        'TIP3P-FB': 'tip3pfb.xml',
         'TIP4P-Ew': 'tip4pew.xml',
         TIP5P: 'tip5p.xml',
     };
@@ -43,6 +45,7 @@ var water_xml = function(protein_ff, water_ff) {
         'AMBER99sb-nmr': 'amber99_obc.xml',
         AMBER03: 'amber03_obc.xml',
         AMBER10: 'amber10_obc.xml',
+        'AMBER-FB15': 'amber99_obc.xml'
     };
 
     if (water_ff in explicit_xmls) {
